@@ -19,5 +19,5 @@ const NotesSchema = new Schema({
     default: Date.now,
   },
 });
-
+//model req. to field one is name and another is schema
 module.exports =mongoose.model('notes', NotesSchema);

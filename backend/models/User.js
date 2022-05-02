@@ -20,6 +20,7 @@ const UserSchema = new Schema({
     default: Date.now,
   },
 });
+//Models are responsible for creating and reading documents from the underlying MongoDB database. 
 const User =mongoose.model('user', UserSchema);
 User.createIndexes();
 module.exports =User;
